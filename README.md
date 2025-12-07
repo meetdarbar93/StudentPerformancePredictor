@@ -184,5 +184,3 @@ Technologies Used:
 
 # 🎉 DONE!
 
-
-Just say **"add badges"** or **"add screenshots section"**!
