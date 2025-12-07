@@ -1,20 +1,25 @@
-# Local env
-venv/
-.env
-*.pyc
-__pycache__/
-
-# Git stuff
-.git/
+# Git repo
+.git
 .gitignore
 
-# Not needed for deploy
+# Local virtual env
+venv/
+env/
+.venv/
+
+# Notebooks & reports
 notebooks/
 reports/
-data/
-*.ipynb
-*.csv
-*.xlsx
 
-# VS Code, etc.
-.vscode/
+# Raw / large data (agar web app ke liye zaruri nahi)
+data/raw/
+data/interim/
+data/processed/
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Misc
+.DS_Store
