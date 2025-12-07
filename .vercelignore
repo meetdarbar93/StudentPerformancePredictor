@@ -1,0 +1,20 @@
+# Local env
+venv/
+.env
+*.pyc
+__pycache__/
+
+# Git stuff
+.git/
+.gitignore
+
+# Not needed for deploy
+notebooks/
+reports/
+data/
+*.ipynb
+*.csv
+*.xlsx
+
+# VS Code, etc.
+.vscode/
