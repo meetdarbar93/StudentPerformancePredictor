@@ -1,0 +1,45 @@
+Model Tuning Report (AUTO-FILLED)
+==================================================
+
+REGRESSION (RandomForestRegressor)
+Best params (GridSearchCV): {'model__max_depth': None, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2, 'model__n_estimators': 300}
+Best CV score (R2): 0.9687530216717991
+Test MAE : 2.248900555555556
+Test RMSE: 2.8406946170950165
+Test R2  : 0.9722989083939709
+
+Feature importances (regression):
+ - Previous_Score: 0.8196032588369115
+ - Hours_Studied: 0.07801818614836643
+ - Attendance: 0.07412650190356367
+ - Assignments_Completed: 0.01999873127201599
+ - Sleep_Hours: 0.006593538985103041
+ - Participation: 0.0016597828540392881
+
+CLASSIFICATION (RandomForestClassifier)
+Best params (GridSearchCV): {'model__max_depth': None, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2, 'model__n_estimators': 300}
+Best CV score (Accuracy): 0.9610416666666667
+Test Accuracy: 0.9525
+
+Classification report:
+
+              precision    recall  f1-score   support
+
+           0       0.90      0.88      0.89       269
+           1       0.97      0.97      0.97       931
+
+    accuracy                           0.95      1200
+   macro avg       0.93      0.93      0.93      1200
+weighted avg       0.95      0.95      0.95      1200
+
+
+Confusion matrix (rows=Actual, cols=Predicted):
+[[238, 31], [26, 905]]
+
+Feature importances (classification):
+ - Previous_Score: 0.7080072899166108
+ - Hours_Studied: 0.1032560900677688
+ - Attendance: 0.10312098796264278
+ - Sleep_Hours: 0.03725255977057099
+ - Assignments_Completed: 0.03700865713753196
+ - Participation: 0.011354415144874638

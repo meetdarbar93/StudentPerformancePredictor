@@ -1,0 +1,31 @@
+Model Tuning Report
+Generated: 2025-12-07 14:17:56 UTC
+====================================================
+
+Dataset
+-------
+File: ../data/cleaned_data.csv
+Features used:
+- Hours_Studied
+- Attendance
+- Previous_Score
+- Assignments_Completed
+- Sleep_Hours
+- Participation
+
+Splits
+------
+- Regression: train/test split (random_state=42)
+- Classification: train/test split (random_state=42, stratify=y_clf)
+
+--- AUTO-FILL SECTION BELOW WILL BE POPULATED IF YOU'VE RUN GRIDSEARCH / TRAINING IN THIS SESSION ---
+PLACEHOLDERS:
+- <BEST_REG_PARAMS>, <BEST_REG_CV_R2>, <REG_TEST_MAE>, <REG_TEST_RMSE>, <REG_TEST_R2>, <REG_FEATURE_IMPORTANCES>
+- <BEST_CLF_PARAMS>, <BEST_CLF_CV_ACC>, <CLF_TEST_ACC>, <CLF_CLASS_REPORT>, <CLF_CONF_MATRIX>, <CLF_FEATURE_IMPORTANCES>
+
+Notes:
+- Use the helper snippet included at the end to re-generate a filled report inside this environment.
+
+Helper snippet (already executed by this cell if possible):
+- If your variables exist (gs_reg, best_reg, X_test_reg, y_test_reg, gs_clf, best_clf, X_test_clf, y_test_clf),
+  this cell will create Model_Tuning_Report_Filled.txt with computed metrics and feature importances.

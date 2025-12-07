@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prediction Notes</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+<div class="page">
+
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">📘</div>
+    <div class="brand-text">
+      <div class="app-name">Prediction Notes</div>
+      <div class="app-sub">Quick Guide</div>
+    </div>
+  </div>
+  <nav class="top-actions">
+    <a class="btn subtle" href="{{ url_for('routes.index') }}">Home</a>
+  </nav>
+</header>
+
+<main class="center-area">
+  <section class="card">
+
+    <h1 class="card-title">Understanding Your Results</h1>
+    <p class="card-sub">
+      This page explains how to read your predicted score and pass/fail result.
+      <br>
+      <strong>Important:</strong> To <strong>PASS</strong>, the predicted final score must be
+      <strong>40 or more</strong>.
+    </p>
+
+    <h3 class="section-title">1. Score Meaning (0–100)</h3>
+    <ul class="notes-list">
+      <li><strong>80 – 100:</strong> Excellent performance</li>
+      <li><strong>65 – 79:</strong> Very good</li>
+      <li><strong>50 – 64:</strong> Good and clearly safe (well above pass marks)</li>
+      <li><strong>40 – 49:</strong> Just passed (borderline but still PASS)</li>
+      <li><strong>&lt; 40:</strong> Does not meet the required passing score (FAIL)</li>
+    </ul>
+
+    <h3 class="section-title">2. Pass / Fail Rule</h3>
+    <ul class="notes-list">
+      <li><strong>PASS:</strong> If the final score is <strong>≥ 40</strong>.</li>
+      <li><strong>FAIL:</strong> If the final score is <strong>&lt; 40</strong>.</li>
+      <li>The other inputs (attendance, study hours, previous score, etc.) are used by the model
+          to calculate this final score.</li>
+      <li>Always remember: <strong>40 is the minimum required score to pass.</strong></li>
+    </ul>
+
+    <h3 class="section-title">3. When You Are Likely to PASS</h3>
+    <ul class="notes-list">
+      <li>Study hours around <strong>2+ hours</strong> daily</li>
+      <li>Attendance above <strong>50%</strong></li>
+      <li>Previous scores above <strong>40–50</strong></li>
+      <li>Completed at least <strong>5 assignments</strong></li>
+      <li>Overall pattern that helps your final score stay at <strong>40 or more</strong></li>
+    </ul>
+
+    <h3 class="section-title">4. When You Are Likely to FAIL</h3>
+    <ul class="notes-list">
+      <li>Study hours below <strong>1–2 hours</strong> per day</li>
+      <li>Attendance below <strong>50%</strong></li>
+      <li>Previous scores often below <strong>40</strong></li>
+      <li>Very few assignments completed (for example, <strong>less than 3–4</strong>)</li>
+      <li>These patterns can pull your predicted final score below <strong>40</strong> (FAIL zone)</li>
+    </ul>
+
+    <h3 class="section-title">5. Borderline Situations</h3>
+    <p>Results can be sensitive when the predicted score is close to the passing mark:</p>
+    <ul class="notes-list">
+      <li>Predicted score around <strong>38–42</strong> is a borderline area.</li>
+      <li>Small changes in study hours, attendance, or assignments can push you
+          <strong>above or below 40</strong>.</li>
+      <li>If your score is just below 40, try to improve at least one area:
+          more study hours, better attendance, or more assignments completed.</li>
+    </ul>
+
+    <div class="notes-button-wrapper">
+      <a href="javascript:history.back()" class="btn subtle"> Back</a>   
+      <a href="{{ url_for('routes.index') }}" class="notes-back-btn">Back to Home</a>
+    </div>
+    
+  </section>
+</main>
+
+<footer class="footer">
+  <small>Quick Notes • 40+ score required to PASS</small>
+</footer>
+
+</div>
+</body>
+</html>

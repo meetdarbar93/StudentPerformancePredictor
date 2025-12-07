@@ -1,0 +1,50 @@
+# -------------------------
+# Python-related ignores
+# -------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# -------------------------
+# Project-specific ignores
+# -------------------------
+
+# Ignore large datasets (optional)
+# Allow only sample or small files
+data/*.csv
+!data/sample.csv
+
+# Ignore trained models if present
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+
+# If models folder contains only ML model files, uncomment this:
+# models/
+
+# Reports intermediate files (keep final images + json)
+reports/*.tmp
+reports/*.log
+
+# -------------------------
+# VS Code editor settings
+# -------------------------
+.vscode/
+
+# -------------------------
+# System files
+# ------------------------- 
+Thumbs.db
+.DS_Store
