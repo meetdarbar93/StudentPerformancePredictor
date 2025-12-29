@@ -1,6 +1,4 @@
-
 ---
-
 # 🎓 Student Performance Prediction System
 
 A complete **Machine Learning + Flask Web Application** that predicts:
@@ -19,9 +17,7 @@ This project includes:
 * ✔ Flask Web App
 * ✔ Notes/Explanation Page
 * ✔ Clean Material-UI Styled Frontend
-
 ---
-
 # 📁 Project Structure
 
 ```
@@ -64,7 +60,7 @@ StudentPerformanceProject/
 
 # 🚀 Installation Guide
 
-## 1️⃣ Create Virtual Environment
+## 1️⃣ Create Virtual Envir		onment
 
 ### ● Windows
 
@@ -123,13 +119,13 @@ Together, these provide accurate, human-like assessments.
 
 # 📊 Score Interpretation (Based on Dataset Percentiles)
 
-| Score Range  | Interpretation    |
-| ------------ | ----------------- |
+| Score Range         | Interpretation    |
+| ------------------- | ----------------- |
 | **75 – 100** | Excellent         |
 | **69 – 75**  | Very Good         |
 | **62 – 69**  | Good              |
 | **38 – 62**  | Needs Improvement |
-| **< 38**     | High Risk         |
+| **< 38**      | High Risk         |
 
 ---
 
@@ -183,4 +179,3 @@ Technologies Used:
 ---
 
 # 🎉 DONE!
-
